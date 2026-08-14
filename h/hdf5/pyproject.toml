@@ -1,0 +1,34 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hdf5"
+version = "2.1.0"
+requires-python = ">=3.10"
+description = "Provides hdf5"
+
+classifiers = [
+    "Programming Language :: C++",
+    "License :: Apache License 2.0",
+]
+
+[project.urls]
+homepage = "https://github.com/HDFGroup/hdf5"
+upstream = "https://github.com/HDFGroup/hdf5/"
+
+[tool.setuptools.packages.find]
+where = ["hdf5/local"]
+include = ["hdf5*"]
+
+[tool.setuptools.package-data]
+hdf5 = [
+    "lib/*.so",
+    "lib/*.so.*",
+    "include/*",
+    "bin/*",
+    "share/*",
+]
