@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: libprotobuf
+Version: 33.6+ibmpyeco
+Summary: Provides protoc compiler and C++ files for protobuf
+Maintainer: Open-CE
+Project-URL: homepage, https://github.com/protocolbuffers/protobuf
+Project-URL: upstream, https://github.com/protocolbuffers/protobuf
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: C++
+Classifier: License :: BSD 3-Clause
+License-File: LICENSE
+Dynamic: license-file
+Classifier: Environment :: MetaData:: IBM Python Ecosystem

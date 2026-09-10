@@ -1,0 +1,12 @@
+prefix=/root/protobuf/local/libprotobuf
+exec_prefix=${prefix}
+libdir=/root/protobuf/local/libprotobuf/lib64
+includedir=/root/protobuf/local/libprotobuf/include
+
+Name: absl_has_ostream_operator
+Description: Abseil has_ostream_operator library
+URL: https://abseil.io/
+Version: 20250512
+Requires: absl_config = 20250512
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

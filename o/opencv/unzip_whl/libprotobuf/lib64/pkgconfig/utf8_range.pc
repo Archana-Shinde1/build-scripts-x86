@@ -1,0 +1,11 @@
+prefix=/root/protobuf/local/libprotobuf
+exec_prefix=/root/protobuf/local/libprotobuf
+libdir=/root/protobuf/local/libprotobuf/lib64
+includedir=/root/protobuf/local/libprotobuf/include
+
+Name: UTF8 Range
+Description: Google's UTF8 Library
+Version: 1.0
+Requires: absl_strings
+Libs: -L${libdir} -lutf8_validity -lutf8_range 
+Cflags: -I${includedir}

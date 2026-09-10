@@ -1,0 +1,12 @@
+prefix=/root/protobuf/local/libprotobuf
+exec_prefix=${prefix}
+libdir=/root/protobuf/local/libprotobuf/lib64
+includedir=/root/protobuf/local/libprotobuf/include
+
+Name: absl_random_internal_distribution_caller
+Description: Abseil random_internal_distribution_caller library
+URL: https://abseil.io/
+Version: 20250512
+Requires: absl_config = 20250512, absl_utility = 20250512, absl_fast_type_id = 20250512, absl_type_traits = 20250512
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

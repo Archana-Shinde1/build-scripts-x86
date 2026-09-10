@@ -1,0 +1,272 @@
+Updating Subscription Management repositories.
+Unable to read consumer identity
+
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+
+Last metadata expiration check: 1 day, 20:14:58 ago on Tue Sep  8 10:29:41 2026.
+Package git-2.52.0-1.el10.x86_64 is already installed.
+Package make-1:4.4.1-9.el10.x86_64 is already installed.
+Package cmake-3.31.8-1.el10.x86_64 is already installed.
+Package wget-1.24.5-8.el10_2.x86_64 is already installed.
+Package python3.14-3.14.7-2.el10_2.x86_64 is already installed.
+Package python3.14-devel-3.14.7-2.el10_2.x86_64 is already installed.
+Package python3.14-pip-25.2-3.el10_2.5.noarch is already installed.
+Package pkgconf-pkg-config-2.1.0-3.el10.x86_64 is already installed.
+Package gcc-14.3.1-4.4.el10.x86_64 is already installed.
+Package gcc-c++-14.3.1-4.4.el10.x86_64 is already installed.
+Package gcc-gfortran-14.3.1-4.4.el10.x86_64 is already installed.
+Package graphviz-9.0.0-15.el10.x86_64 is already installed.
+Package gcc-toolset-15-15.0-11.el10.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Looking in indexes: https://pypi.python.org/simple
+Requirement already satisfied: nvidia-cudnn-cu12==9.5.1.17 in /usr/local/lib/python3.14/site-packages (9.5.1.17)
+Requirement already satisfied: numpy==2.5.0 in /usr/local/lib64/python3.14/site-packages (2.5.0)
+Requirement already satisfied: protobuf==6.33.6 in /usr/local/lib64/python3.14/site-packages (6.33.6)
+Requirement already satisfied: scikit-build in /usr/local/lib/python3.14/site-packages (0.19.1)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.14/site-packages (84.0.0)
+Requirement already satisfied: cmake==3.* in /usr/local/lib64/python3.14/site-packages (3.31.10)
+Requirement already satisfied: ninja in /usr/local/lib64/python3.14/site-packages (1.13.2)
+Requirement already satisfied: cython in /usr/local/lib64/python3.14/site-packages (3.2.0)
+Requirement already satisfied: build in /usr/local/lib/python3.14/site-packages (1.5.0)
+Requirement already satisfied: wheel in /usr/local/lib/python3.14/site-packages (0.48.0)
+Requirement already satisfied: nvidia-cublas-cu12 in /usr/local/lib/python3.14/site-packages (from nvidia-cudnn-cu12==9.5.1.17) (12.9.2.10)
+Requirement already satisfied: distro in /usr/local/lib/python3.14/site-packages (from scikit-build) (1.9.0)
+Requirement already satisfied: packaging in /usr/local/lib/python3.14/site-packages (from scikit-build) (26.3)
+Requirement already satisfied: pyproject_hooks in /usr/local/lib/python3.14/site-packages (from build) (1.2.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12 in /usr/local/lib/python3.14/site-packages (from nvidia-cublas-cu12->nvidia-cudnn-cu12==9.5.1.17) (12.9.86)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Looking in indexes: https://pypi.python.org/simple
+Processing ./libprotobuf-33.6+ibmpyeco-py3-none-linux_x86_64.whl
+Installing collected packages: libprotobuf
+  Attempting uninstall: libprotobuf
+    Found existing installation: libprotobuf 33.6+ibmpyeco
+    Uninstalling libprotobuf-33.6+ibmpyeco:
+      Successfully uninstalled libprotobuf-33.6+ibmpyeco
+Successfully installed libprotobuf-33.6+ibmpyeco
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Python site-packages:
+/usr/local/lib64/python3.14/site-packages
+/usr/local/lib/python3.14/site-packages
+/usr/lib64/python3.14/site-packages
+/usr/lib/python3.14/site-packages
+libprotobuf location:
+_NamespacePath(['/usr/local/lib/python3.14/site-packages/libprotobuf'])
+Building CV.......
+fatal: destination path 'opencv-python' already exists and is not an empty directory.
+-rwxr-xr-x. 1 root root 4248960 Sep 10 06:44 /usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so
+============================================================
+Package       : opencv-python-headless
+Version       : 94
+Build type    : cpu
+Python        : 3.14
+Protobuf      : /usr/local/lib/python3.14/site-packages/libprotobuf
+Output        : /root/cv_script/build-scripts/o/opencv/output
+CMAKE_ARGS    : 
+    -DCMAKE_BUILD_TYPE=Release
+    
+
+    -DCMAKE_PREFIX_PATH=
+
+    -DWITH_EIGEN=1
+
+    -DBUILD_TESTS=0
+    -DBUILD_DOCS=0
+    -DBUILD_PERF_TESTS=0
+
+    -DBUILD_ZLIB=0
+    -DBUILD_TIFF=0
+    -DBUILD_PNG=0
+    -DBUILD_OPENEXR=1
+    -DBUILD_JASPER=0
+    -DBUILD_JPEG=0
+
+    -DWITH_ITT=1
+    -DWITH_V4L=1
+
+    -DWITH_OPENCL=0
+    -DWITH_OPENCLAMDFFT=0
+    -DWITH_OPENCLAMDBLAS=0
+    -DWITH_OPENCL_D3D11_NV=0
+
+    -DWITH_1394=0
+    -DWITH_CARBON=0
+    -DWITH_OPENNI=0
+
+    -DWITH_FFMPEG=0
+    -DHAVE_FFMPEG=0
+
+    -DWITH_JASPER=0
+    -DWITH_VA=0
+    -DWITH_VA_INTEL=0
+    -DWITH_GSTREAMER=0
+    -DWITH_MATLAB=0
+    -DWITH_TESSERACT=0
+    -DWITH_VTK=0
+    -DWITH_GTK=0
+    -DWITH_QT=0
+    -DWITH_GPHOTO2=0
+
+    -DINSTALL_C_EXAMPLES=0
+
+    -DProtobuf_LIBRARY=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so
+    -DProtobuf_LIBRARIES=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so
+    -DProtobuf_INCLUDE_DIR=/usr/local/lib/python3.14/site-packages/libprotobuf/include
+
+    -DBUILD_PROTOBUF=OFF
+    -DBUILD_LIBPROTOBUF_FROM_SOURCES=OFF
+    -DPROTOBUF_UPDATE_FILES=ON
+
+
+    -DWITH_LAPACK=0
+    -DHAVE_LAPACK=0
+
+============================================================
+/usr/local/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+
+
+--------------------------------------------------------------------------------
+-- Trying 'Ninja' generator
+--------------------------------
+---------------------------
+----------------------
+-----------------
+------------
+-------
+--
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/rh/gcc-toolset-15/root/usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/rh/gcc-toolset-15/root/usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /root/cv_script/build-scripts/o/opencv/opencv-python/_cmake_test_compile/build
+--
+-------
+------------
+-----------------
+----------------------
+---------------------------
+--------------------------------
+-- Trying 'Ninja' generator - success
+--------------------------------------------------------------------------------
+
+Configuring Project
+  Working directory:
+    /root/cv_script/build-scripts/o/opencv/opencv-python/_skbuild/linux-x86_64-3.14/cmake-build
+  Command:
+    /usr/local/lib64/python3.14/site-packages/cmake/data/bin/cmake /root/cv_script/build-scripts/o/opencv/opencv-python/opencv -G Ninja -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/local/bin/ninja --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX:PATH=/root/cv_script/build-scripts/o/opencv/opencv-python/_skbuild/linux-x86_64-3.14/cmake-install -DPYTHON_VERSION_STRING:STRING=3.14.7 -DSKBUILD:INTERNAL=TRUE -DCMAKE_MODULE_PATH:PATH=/usr/local/lib/python3.14/site-packages/skbuild/resources/cmake -DPYTHON_EXECUTABLE:PATH=/usr/bin/python3.14 -DPYTHON_INCLUDE_DIR:PATH=/usr/include/python3.14 -DPYTHON_LIBRARY:PATH=/usr/lib64/libpython3.14.so -DPython_EXECUTABLE:PATH=/usr/bin/python3.14 -DPython_ROOT_DIR:PATH=/usr -DPython_FIND_REGISTRY:STRING=NEVER -DPython_INCLUDE_DIR:PATH=/usr/include/python3.14 -DPython_NumPy_INCLUDE_DIRS:PATH=/usr/local/lib64/python3.14/site-packages/numpy/_core/include -DPython3_EXECUTABLE:PATH=/usr/bin/python3.14 -DPython3_ROOT_DIR:PATH=/usr -DPython3_FIND_REGISTRY:STRING=NEVER -DPython3_INCLUDE_DIR:PATH=/usr/include/python3.14 -DPython3_NumPy_INCLUDE_DIRS:PATH=/usr/local/lib64/python3.14/site-packages/numpy/_core/include -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/local/bin/ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH= -DWITH_EIGEN=1 -DBUILD_TESTS=0 -DBUILD_DOCS=0 -DBUILD_PERF_TESTS=0 -DBUILD_ZLIB=0 -DBUILD_TIFF=0 -DBUILD_PNG=0 -DBUILD_OPENEXR=1 -DBUILD_JASPER=0 -DBUILD_JPEG=0 -DWITH_ITT=1 -DWITH_V4L=1 -DWITH_OPENCL=0 -DWITH_OPENCLAMDFFT=0 -DWITH_OPENCLAMDBLAS=0 -DWITH_OPENCL_D3D11_NV=0 -DWITH_1394=0 -DWITH_CARBON=0 -DWITH_OPENNI=0 -DWITH_FFMPEG=0 -DHAVE_FFMPEG=0 -DWITH_JASPER=0 -DWITH_VA=0 -DWITH_VA_INTEL=0 -DWITH_GSTREAMER=0 -DWITH_MATLAB=0 -DWITH_TESSERACT=0 -DWITH_VTK=0 -DWITH_GTK=0 -DWITH_QT=0 -DWITH_GPHOTO2=0 -DINSTALL_C_EXAMPLES=0 -DProtobuf_LIBRARY=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so -DProtobuf_LIBRARIES=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so -DProtobuf_INCLUDE_DIR=/usr/local/lib/python3.14/site-packages/libprotobuf/include -DBUILD_PROTOBUF=OFF -DBUILD_LIBPROTOBUF_FROM_SOURCES=OFF -DPROTOBUF_UPDATE_FILES=ON -DWITH_LAPACK=0 -DHAVE_LAPACK=0 -DPYTHON3_EXECUTABLE=/usr/bin/python3.14 -DPYTHON_DEFAULT_EXECUTABLE=/usr/bin/python3.14 -DPYTHON3_INCLUDE_DIR=/usr/include/python3.14 -DPYTHON3_LIBRARY=/usr/lib64/libpython3.14.so -DBUILD_opencv_python3=ON -DBUILD_opencv_python2=OFF -DBUILD_opencv_java=OFF -DOPENCV_PYTHON3_INSTALL_PATH=python -DINSTALL_CREATE_DISTRIB=ON -DBUILD_opencv_apps=OFF -DBUILD_opencv_freetype=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_DOCS=OFF -DPYTHON3_LIMITED_API=ON -DBUILD_OPENEXR=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH= -DWITH_EIGEN=1 -DBUILD_TESTS=0 -DBUILD_DOCS=0 -DBUILD_PERF_TESTS=0 -DBUILD_ZLIB=0 -DBUILD_TIFF=0 -DBUILD_PNG=0 -DBUILD_OPENEXR=1 -DBUILD_JASPER=0 -DBUILD_JPEG=0 -DWITH_ITT=1 -DWITH_V4L=1 -DWITH_OPENCL=0 -DWITH_OPENCLAMDFFT=0 -DWITH_OPENCLAMDBLAS=0 -DWITH_OPENCL_D3D11_NV=0 -DWITH_1394=0 -DWITH_CARBON=0 -DWITH_OPENNI=0 -DWITH_FFMPEG=0 -DHAVE_FFMPEG=0 -DWITH_JASPER=0 -DWITH_VA=0 -DWITH_VA_INTEL=0 -DWITH_GSTREAMER=0 -DWITH_MATLAB=0 -DWITH_TESSERACT=0 -DWITH_VTK=0 -DWITH_GTK=0 -DWITH_QT=0 -DWITH_GPHOTO2=0 -DINSTALL_C_EXAMPLES=0 -DProtobuf_LIBRARY=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so -DProtobuf_LIBRARIES=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so -DProtobuf_INCLUDE_DIR=/usr/local/lib/python3.14/site-packages/libprotobuf/include -DBUILD_PROTOBUF=OFF -DBUILD_LIBPROTOBUF_FROM_SOURCES=OFF -DPROTOBUF_UPDATE_FILES=ON -DWITH_LAPACK=0 -DHAVE_LAPACK=0
+
+CMake Deprecation Warning at CMakeLists.txt:25 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+Not searching for unused variables given on the command line.
+
+-- Detected processor: x86_64
+-- Looking for ccache - not found
+-- Could NOT find AVIF (missing: AVIF_LIBRARY AVIF_INCLUDE_DIR) 
+Cleaning INTERNAL cached variable: JPEG_LIBRARY
+Cleaning INTERNAL cached variable: JPEG_INCLUDE_DIR
+-- Could NOT find JPEG (missing: JPEG_LIBRARY JPEG_INCLUDE_DIR) 
+-- libjpeg-turbo: VERSION = 3.1.2, BUILD = opencv-4.14.0-libjpeg-turbo
+-- SIMD extensions disabled: could not find NASM compiler.  Performance will suffer.
+Cleaning INTERNAL cached variable: TIFF_LIBRARY
+Cleaning INTERNAL cached variable: TIFF_INCLUDE_DIR
+-- Could NOT find TIFF (missing: TIFF_LIBRARY TIFF_INCLUDE_DIR) 
+Cleaning INTERNAL cached variable: WEBP_LIBRARY
+Cleaning INTERNAL cached variable: WEBP_INCLUDE_DIR
+-- Found system OpenJPEG: openjp2 (found version "2.5.2")
+-- found Intel IPP (ICV version): 2026.0.0 [2026.0.0]
+-- at: /root/cv_script/build-scripts/o/opencv/opencv-python/_skbuild/linux-x86_64-3.14/cmake-build/3rdparty/ippicv/ippicv_lnx/icv
+-- found Intel IPP Integration Wrappers sources: 2026.0.0
+-- at: /root/cv_script/build-scripts/o/opencv/opencv-python/_skbuild/linux-x86_64-3.14/cmake-build/3rdparty/ippicv/ippicv_lnx/iw
+CMake Warning at /usr/local/lib64/cmake/protobuf/protobuf-config.cmake:9 (find_package):
+  Found package configuration file:
+
+    /usr/local/lib64/cmake/absl/abslConfig.cmake
+
+  but it set absl_FOUND to FALSE so package "absl" is considered to be NOT
+  FOUND.  Reason given by package:
+
+  The following imported targets are referenced, but are missing:
+  GTest::gmock GTest::gtest
+
+Call Stack (most recent call first):
+  cmake/OpenCVFindProtobuf.cmake:37 (find_package)
+  CMakeLists.txt:822 (include)
+
+
+CMake Error at /usr/local/lib64/cmake/protobuf/protobuf-targets.cmake:135 (message):
+  The imported target "protobuf::libprotobuf" references the file
+
+     "/usr/local/lib64/libprotobuf.a"
+
+  but this file does not exist.  Possible reasons include:
+
+  * The file was deleted, renamed, or moved to another location.
+
+  * An install or uninstall procedure did not complete successfully.
+
+  * The installation package was faulty and contained
+
+     "/usr/local/lib64/cmake/protobuf/protobuf-targets.cmake"
+
+  but not all the files it references.
+
+Call Stack (most recent call first):
+  /usr/local/lib64/cmake/protobuf/protobuf-config.cmake:16 (include)
+  cmake/OpenCVFindProtobuf.cmake:37 (find_package)
+  CMakeLists.txt:822 (include)
+
+
+-- Configuring incomplete, errors occurred!
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.14/site-packages/skbuild/setuptools_wrap.py", line 661, in setup
+    env = cmkr.configure(
+        cmake_args,
+    ...<3 lines>...
+        languages=cmake_languages,
+    )
+  File "/usr/local/lib/python3.14/site-packages/skbuild/cmaker.py", line 356, in configure
+    raise SKBuildError(msg)
+
+An error occurred while configuring with CMake.
+  Command:
+    /usr/local/lib64/python3.14/site-packages/cmake/data/bin/cmake /root/cv_script/build-scripts/o/opencv/opencv-python/opencv -G Ninja -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/local/bin/ninja --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX:PATH=/root/cv_script/build-scripts/o/opencv/opencv-python/_skbuild/linux-x86_64-3.14/cmake-install -DPYTHON_VERSION_STRING:STRING=3.14.7 -DSKBUILD:INTERNAL=TRUE -DCMAKE_MODULE_PATH:PATH=/usr/local/lib/python3.14/site-packages/skbuild/resources/cmake -DPYTHON_EXECUTABLE:PATH=/usr/bin/python3.14 -DPYTHON_INCLUDE_DIR:PATH=/usr/include/python3.14 -DPYTHON_LIBRARY:PATH=/usr/lib64/libpython3.14.so -DPython_EXECUTABLE:PATH=/usr/bin/python3.14 -DPython_ROOT_DIR:PATH=/usr -DPython_FIND_REGISTRY:STRING=NEVER -DPython_INCLUDE_DIR:PATH=/usr/include/python3.14 -DPython_NumPy_INCLUDE_DIRS:PATH=/usr/local/lib64/python3.14/site-packages/numpy/_core/include -DPython3_EXECUTABLE:PATH=/usr/bin/python3.14 -DPython3_ROOT_DIR:PATH=/usr -DPython3_FIND_REGISTRY:STRING=NEVER -DPython3_INCLUDE_DIR:PATH=/usr/include/python3.14 -DPython3_NumPy_INCLUDE_DIRS:PATH=/usr/local/lib64/python3.14/site-packages/numpy/_core/include -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/local/bin/ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH= -DWITH_EIGEN=1 -DBUILD_TESTS=0 -DBUILD_DOCS=0 -DBUILD_PERF_TESTS=0 -DBUILD_ZLIB=0 -DBUILD_TIFF=0 -DBUILD_PNG=0 -DBUILD_OPENEXR=1 -DBUILD_JASPER=0 -DBUILD_JPEG=0 -DWITH_ITT=1 -DWITH_V4L=1 -DWITH_OPENCL=0 -DWITH_OPENCLAMDFFT=0 -DWITH_OPENCLAMDBLAS=0 -DWITH_OPENCL_D3D11_NV=0 -DWITH_1394=0 -DWITH_CARBON=0 -DWITH_OPENNI=0 -DWITH_FFMPEG=0 -DHAVE_FFMPEG=0 -DWITH_JASPER=0 -DWITH_VA=0 -DWITH_VA_INTEL=0 -DWITH_GSTREAMER=0 -DWITH_MATLAB=0 -DWITH_TESSERACT=0 -DWITH_VTK=0 -DWITH_GTK=0 -DWITH_QT=0 -DWITH_GPHOTO2=0 -DINSTALL_C_EXAMPLES=0 -DProtobuf_LIBRARY=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so -DProtobuf_LIBRARIES=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so -DProtobuf_INCLUDE_DIR=/usr/local/lib/python3.14/site-packages/libprotobuf/include -DBUILD_PROTOBUF=OFF -DBUILD_LIBPROTOBUF_FROM_SOURCES=OFF -DPROTOBUF_UPDATE_FILES=ON -DWITH_LAPACK=0 -DHAVE_LAPACK=0 -DPYTHON3_EXECUTABLE=/usr/bin/python3.14 -DPYTHON_DEFAULT_EXECUTABLE=/usr/bin/python3.14 -DPYTHON3_INCLUDE_DIR=/usr/include/python3.14 -DPYTHON3_LIBRARY=/usr/lib64/libpython3.14.so -DBUILD_opencv_python3=ON -DBUILD_opencv_python2=OFF -DBUILD_opencv_java=OFF -DOPENCV_PYTHON3_INSTALL_PATH=python -DINSTALL_CREATE_DISTRIB=ON -DBUILD_opencv_apps=OFF -DBUILD_opencv_freetype=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_DOCS=OFF -DPYTHON3_LIMITED_API=ON -DBUILD_OPENEXR=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH= -DWITH_EIGEN=1 -DBUILD_TESTS=0 -DBUILD_DOCS=0 -DBUILD_PERF_TESTS=0 -DBUILD_ZLIB=0 -DBUILD_TIFF=0 -DBUILD_PNG=0 -DBUILD_OPENEXR=1 -DBUILD_JASPER=0 -DBUILD_JPEG=0 -DWITH_ITT=1 -DWITH_V4L=1 -DWITH_OPENCL=0 -DWITH_OPENCLAMDFFT=0 -DWITH_OPENCLAMDBLAS=0 -DWITH_OPENCL_D3D11_NV=0 -DWITH_1394=0 -DWITH_CARBON=0 -DWITH_OPENNI=0 -DWITH_FFMPEG=0 -DHAVE_FFMPEG=0 -DWITH_JASPER=0 -DWITH_VA=0 -DWITH_VA_INTEL=0 -DWITH_GSTREAMER=0 -DWITH_MATLAB=0 -DWITH_TESSERACT=0 -DWITH_VTK=0 -DWITH_GTK=0 -DWITH_QT=0 -DWITH_GPHOTO2=0 -DINSTALL_C_EXAMPLES=0 -DProtobuf_LIBRARY=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so -DProtobuf_LIBRARIES=/usr/local/lib/python3.14/site-packages/libprotobuf/lib64/libprotobuf.so -DProtobuf_INCLUDE_DIR=/usr/local/lib/python3.14/site-packages/libprotobuf/include -DBUILD_PROTOBUF=OFF -DBUILD_LIBPROTOBUF_FROM_SOURCES=OFF -DPROTOBUF_UPDATE_FILES=ON -DWITH_LAPACK=0 -DHAVE_LAPACK=0
+  Source directory:
+    /root/cv_script/build-scripts/o/opencv/opencv-python/opencv
+  Working directory:
+    /root/cv_script/build-scripts/o/opencv/opencv-python/_skbuild/linux-x86_64-3.14/cmake-build
+Please see CMake's output for more information.
+
+============================================================
+opencv-python-headless wheel build completed
+============================================================
+total 0

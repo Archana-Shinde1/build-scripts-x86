@@ -1,0 +1,12 @@
+prefix=/root/protobuf/local/libprotobuf
+exec_prefix=${prefix}
+libdir=/root/protobuf/local/libprotobuf/lib64
+includedir=/root/protobuf/local/libprotobuf/include
+
+Name: absl_meta
+Description: Abseil meta library
+URL: https://abseil.io/
+Version: 20250512
+Requires: absl_type_traits = 20250512
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

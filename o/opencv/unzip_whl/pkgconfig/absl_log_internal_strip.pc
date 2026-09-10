@@ -1,0 +1,12 @@
+prefix=/root/protobuf/local/libprotobuf
+exec_prefix=${prefix}
+libdir=/root/protobuf/local/libprotobuf/lib64
+includedir=/root/protobuf/local/libprotobuf/include
+
+Name: absl_log_internal_strip
+Description: Abseil log_internal_strip library
+URL: https://abseil.io/
+Version: 20250512
+Requires: absl_core_headers = 20250512, absl_log_internal_message = 20250512, absl_log_internal_nullstream = 20250512, absl_log_severity = 20250512
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

@@ -1,0 +1,12 @@
+prefix=/root/protobuf/local/libprotobuf
+exec_prefix=${prefix}
+libdir=/root/protobuf/local/libprotobuf/lib64
+includedir=/root/protobuf/local/libprotobuf/include
+
+Name: absl_demangle_rust
+Description: Abseil demangle_rust library
+URL: https://abseil.io/
+Version: 20250512
+Requires: absl_config = 20250512, absl_core_headers = 20250512, absl_decode_rust_punycode = 20250512
+Libs: -L${libdir}  -labsl_demangle_rust 
+Cflags: -I${includedir} -DNOMINMAX

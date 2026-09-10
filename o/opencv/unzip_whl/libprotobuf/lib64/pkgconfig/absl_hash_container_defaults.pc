@@ -1,0 +1,12 @@
+prefix=/root/protobuf/local/libprotobuf
+exec_prefix=${prefix}
+libdir=/root/protobuf/local/libprotobuf/lib64
+includedir=/root/protobuf/local/libprotobuf/include
+
+Name: absl_hash_container_defaults
+Description: Abseil hash_container_defaults library
+URL: https://abseil.io/
+Version: 20250512
+Requires: absl_config = 20250512, absl_hash_function_defaults = 20250512
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

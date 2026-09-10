@@ -1,0 +1,12 @@
+prefix=/root/protobuf/local/libprotobuf
+exec_prefix=${prefix}
+libdir=/root/protobuf/local/libprotobuf/lib64
+includedir=/root/protobuf/local/libprotobuf/include
+
+Name: absl_flags_private_handle_accessor
+Description: Abseil flags_private_handle_accessor library
+URL: https://abseil.io/
+Version: 20250512
+Requires: absl_config = 20250512, absl_flags_commandlineflag = 20250512, absl_flags_commandlineflag_internal = 20250512, absl_strings = 20250512
+Libs: -L${libdir}  -labsl_flags_private_handle_accessor 
+Cflags: -I${includedir} -DNOMINMAX
