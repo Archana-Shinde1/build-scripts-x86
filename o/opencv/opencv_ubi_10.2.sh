@@ -42,7 +42,7 @@ export RANLIB="$(command -v ranlib)"
 
 echo "------------ libprotobuf Building-------------------"
 
-#git clone https://github.com/protocolbuffers/protobuf
+git clone https://github.com/protocolbuffers/protobuf
 cd protobuf
 git checkout v33.6
 
@@ -53,7 +53,7 @@ LIBPROTO_INSTALL=$LIBPROTO_DIR/local/libprotobuf
 git submodule update --init --recursive
 rm -rf ./third_party/googletest | true
 
-#mkdir build
+mkdir build
 cd build
 
 #Building and testing is performed through the same command
@@ -132,7 +132,7 @@ cd $WORK_DIR
 
 echo "-----------opencv-python-headless Building-------------------"
 
-#git clone $PACKAGE_URL
+git clone $PACKAGE_URL
 cd $PACKAGE_DIR
 git -c advice.detachedHead=false checkout "$GIT_TAG"
 git submodule update --init --recursive
